@@ -14,7 +14,7 @@ plugins {
     id "idea"
 }
 
-group 'io.jdk.grpcdemo'
+group 'ru.jokerconf.grpcdemo'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
@@ -22,11 +22,11 @@ apply plugin: 'application'
 
 protobuf {
     protoc {
-        artifact = "com.google.protobuf:protoc:3.2.0"
+        artifact = "com.google.protobuf:protoc:3.3.0"
     }
     plugins {
         grpc {
-            artifact = 'io.grpc:protoc-gen-grpc-java:1.4.0'
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.6.1'
         }
     }
     generateProtoTasks {
@@ -47,7 +47,8 @@ repositories {
 }
 
 dependencies {
-    compile 'io.grpc:grpc-all:1.4.0'
+    compile 'io.grpc:grpc-all:1.6.1'
+    compile 'com.google.guava:guava:23.3-jre'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
@@ -60,25 +61,31 @@ idea {
 
 task runServer(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'io.jdk.grpcdemo.WeatherServer'
+    main = 'ru.jokerconf.grpcdemo.WeatherServer'
 }
 
 task runClient(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'io.jdk.grpcdemo.WeatherClient'
+    main = 'ru.jokerconf.grpcdemo.WeatherClient'
 }
 
 task asyncServer(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'io.jdk.grpcdemo.dependencies.WeatherAsyncServer'
+    main = 'ru.jokerconf.grpcdemo.dependencies.WeatherAsyncServer'
 }
 
 task streamingServer(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'io.jdk.grpcdemo.streaming.WeatherStreamingServer'
+    main = 'ru.jokerconf.grpcdemo.streaming.WeatherStreamingServer'
 }
 
 task streamingClient(type: JavaExec) {
     classpath = sourceSets.main.runtimeClasspath
-    main = 'io.jdk.grpcdemo.streaming.WeatherStreamingClient'
+    main = 'ru.jokerconf.grpcdemo.streaming.WeatherStreamingClient'
+}
+
+task streamingClientWithFlowControl(type: JavaExec) {
+    standardInput = System.in
+    classpath = sourceSets.main.runtimeClasspath
+    main = 'ru.jokerconf.grpcdemo.streaming.WeatherStreamingClientWithFlowControl'
 }

@@ -1,13 +1,13 @@
-package io.jdk.grpcdemo.dependencies;
+package ru.jokerconf.grpcdemo.dependencies;
 
 import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.Futures;
 import com.google.common.util.concurrent.ListenableFuture;
-import io.jdk.grpcdemo.*;
-import io.jdk.grpcdemo.WeatherServiceGrpc.WeatherServiceImplBase;
-import io.jdk.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceFutureStub;
-import io.jdk.grpcdemo.dependencies.TemperatureServiceGrpc.TemperatureServiceFutureStub;
-import io.jdk.grpcdemo.dependencies.WindServiceGrpc.WindServiceFutureStub;
+import ru.jokerconf.grpcdemo.*;
+import ru.jokerconf.grpcdemo.WeatherServiceGrpc.WeatherServiceImplBase;
+import ru.jokerconf.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceFutureStub;
+import ru.jokerconf.grpcdemo.dependencies.TemperatureServiceGrpc.TemperatureServiceFutureStub;
+import ru.jokerconf.grpcdemo.dependencies.WindServiceGrpc.WindServiceFutureStub;
 import io.grpc.stub.StreamObserver;
 
 import java.util.List;

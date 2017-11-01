@@ -1,9 +1,9 @@
-package io.jdk.grpcdemo.streaming;
+package ru.jokerconf.grpcdemo.streaming;
 
-import io.jdk.grpcdemo.Coordinates;
-import io.jdk.grpcdemo.Wind;
-import io.jdk.grpcdemo.providers.RandomWindProvider;
-import io.jdk.grpcdemo.streaming.WindStreamingServiceGrpc.WindStreamingServiceImplBase;
+import ru.jokerconf.grpcdemo.Coordinates;
+import ru.jokerconf.grpcdemo.Wind;
+import ru.jokerconf.grpcdemo.providers.RandomWindProvider;
+import ru.jokerconf.grpcdemo.streaming.WindStreamingServiceGrpc.WindStreamingServiceImplBase;
 import io.grpc.stub.StreamObserver;
 
 /**

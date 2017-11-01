@@ -27,3 +27,7 @@ grpc-java demo.
 ```
 ./gradlew streamingClient
 ```
+
+```
+./gradlew streamingClientWithFlowControl
+```

@@ -1,10 +1,10 @@
-package io.jdk.grpcdemo.streaming;
+package ru.jokerconf.grpcdemo.streaming;
 
-import io.jdk.grpcdemo.Coordinates;
-import io.jdk.grpcdemo.CopenhagenCoordinates;
-import io.jdk.grpcdemo.WeatherRequest;
-import io.jdk.grpcdemo.WeatherResponse;
-import io.jdk.grpcdemo.streaming.WeatherStreamingServiceGrpc.WeatherStreamingServiceStub;
+import ru.jokerconf.grpcdemo.CaliforniaCoordinates;
+import ru.jokerconf.grpcdemo.Coordinates;
+import ru.jokerconf.grpcdemo.WeatherRequest;
+import ru.jokerconf.grpcdemo.WeatherResponse;
+import ru.jokerconf.grpcdemo.streaming.WeatherStreamingServiceGrpc.WeatherStreamingServiceStub;
 import io.grpc.ManagedChannel;
 import io.grpc.netty.NettyChannelBuilder;
 import io.grpc.stub.StreamObserver;
@@ -43,7 +43,7 @@ public class WeatherStreamingClient {
 
         WeatherRequest request = WeatherRequest.newBuilder()
                 .setCoordinates(Coordinates.newBuilder()
-                        .setLatitude(CopenhagenCoordinates.LATITUDE).setLongitude(CopenhagenCoordinates.LONGITUDE))
+                        .setLatitude(CaliforniaCoordinates.LATITUDE).setLongitude(CaliforniaCoordinates.LONGITUDE))
                 .build();
         requestStream.onNext(request);
 

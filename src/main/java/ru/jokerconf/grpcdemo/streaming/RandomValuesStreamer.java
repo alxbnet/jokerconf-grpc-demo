@@ -1,4 +1,4 @@
-package io.jdk.grpcdemo.streaming;
+package ru.jokerconf.grpcdemo.streaming;
 
 import io.grpc.stub.StreamObserver;
 

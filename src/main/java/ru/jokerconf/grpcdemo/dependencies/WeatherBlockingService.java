@@ -1,10 +1,10 @@
-package io.jdk.grpcdemo.dependencies;
+package ru.jokerconf.grpcdemo.dependencies;
 
-import io.jdk.grpcdemo.*;
-import io.jdk.grpcdemo.WeatherServiceGrpc.WeatherServiceImplBase;
-import io.jdk.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceBlockingStub;
-import io.jdk.grpcdemo.dependencies.TemperatureServiceGrpc.TemperatureServiceBlockingStub;
-import io.jdk.grpcdemo.dependencies.WindServiceGrpc.WindServiceBlockingStub;
+import ru.jokerconf.grpcdemo.*;
+import ru.jokerconf.grpcdemo.WeatherServiceGrpc.WeatherServiceImplBase;
+import ru.jokerconf.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceBlockingStub;
+import ru.jokerconf.grpcdemo.dependencies.TemperatureServiceGrpc.TemperatureServiceBlockingStub;
+import ru.jokerconf.grpcdemo.dependencies.WindServiceGrpc.WindServiceBlockingStub;
 import io.grpc.stub.StreamObserver;
 
 /**

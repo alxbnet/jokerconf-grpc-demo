@@ -1,9 +1,9 @@
-package io.jdk.grpcdemo.streaming;
+package ru.jokerconf.grpcdemo.streaming;
 
-import io.jdk.grpcdemo.Coordinates;
-import io.jdk.grpcdemo.Temperature;
-import io.jdk.grpcdemo.providers.RandomTemperatureProvider;
-import io.jdk.grpcdemo.streaming.TemperatureStreamingServiceGrpc.TemperatureStreamingServiceImplBase;
+import ru.jokerconf.grpcdemo.Coordinates;
+import ru.jokerconf.grpcdemo.Temperature;
+import ru.jokerconf.grpcdemo.providers.RandomTemperatureProvider;
+import ru.jokerconf.grpcdemo.streaming.TemperatureStreamingServiceGrpc.TemperatureStreamingServiceImplBase;
 import io.grpc.stub.StreamObserver;
 
 /**

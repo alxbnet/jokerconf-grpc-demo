@@ -1,8 +1,8 @@
-package io.jdk.grpcdemo.streaming;
+package ru.jokerconf.grpcdemo.streaming;
 
-import io.jdk.grpcdemo.streaming.HumidityStreamingServiceGrpc.HumidityStreamingServiceStub;
-import io.jdk.grpcdemo.streaming.TemperatureStreamingServiceGrpc.TemperatureStreamingServiceStub;
-import io.jdk.grpcdemo.streaming.WindStreamingServiceGrpc.WindStreamingServiceStub;
+import ru.jokerconf.grpcdemo.streaming.HumidityStreamingServiceGrpc.HumidityStreamingServiceStub;
+import ru.jokerconf.grpcdemo.streaming.TemperatureStreamingServiceGrpc.TemperatureStreamingServiceStub;
+import ru.jokerconf.grpcdemo.streaming.WindStreamingServiceGrpc.WindStreamingServiceStub;
 import io.grpc.Server;
 import io.grpc.netty.NettyChannelBuilder;
 import io.grpc.netty.NettyServerBuilder;

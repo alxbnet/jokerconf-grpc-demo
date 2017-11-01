@@ -1,10 +1,10 @@
-package io.jdk.grpcdemo;
+package ru.jokerconf.grpcdemo;
 
-import io.jdk.grpcdemo.WeatherServiceGrpc.WeatherServiceBlockingStub;
-import io.jdk.grpcdemo.WeatherServiceGrpc.WeatherServiceStub;
 import io.grpc.ManagedChannel;
 import io.grpc.netty.NettyChannelBuilder;
 import io.grpc.stub.StreamObserver;
+import ru.jokerconf.grpcdemo.WeatherServiceGrpc.WeatherServiceBlockingStub;
+import ru.jokerconf.grpcdemo.WeatherServiceGrpc.WeatherServiceStub;
 
 import java.util.concurrent.Semaphore;
 
@@ -21,8 +21,8 @@ public class WeatherClient {
         WeatherServiceStub asyncClient = WeatherServiceGrpc.newStub(grpcChannel);
 
         WeatherRequest request = WeatherRequest.newBuilder()
-                .setCoordinates(Coordinates.newBuilder().setLatitude(CopenhagenCoordinates.LATITUDE)
-                        .setLongitude(CopenhagenCoordinates.LONGITUDE)).build();
+                .setCoordinates(Coordinates.newBuilder().setLatitude(CaliforniaCoordinates.LATITUDE)
+                        .setLongitude(CaliforniaCoordinates.LONGITUDE)).build();
 
         WeatherResponse response = blockingClient.getCurrent(request);
         System.out.printf("Blocking client. Current weather for %s: %s.%n", request, response);

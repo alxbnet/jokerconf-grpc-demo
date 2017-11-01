@@ -1,9 +1,13 @@
-package io.jdk.grpcdemo;
+package ru.jokerconf.grpcdemo;
 
-import io.jdk.grpcdemo.WeatherServiceGrpc.WeatherServiceImplBase;
+import ru.jokerconf.grpcdemo.Humidity;
+import ru.jokerconf.grpcdemo.Temperature;
+import ru.jokerconf.grpcdemo.WeatherRequest;
+import ru.jokerconf.grpcdemo.WeatherResponse;
+import ru.jokerconf.grpcdemo.WeatherServiceGrpc.WeatherServiceImplBase;
 import io.grpc.stub.StreamObserver;
 
-import static io.jdk.grpcdemo.Temperature.Units.CELSUIS;
+import static ru.jokerconf.grpcdemo.Temperature.Units.CELSUIS;
 
 /**
  * Returns hard-coded weather response.

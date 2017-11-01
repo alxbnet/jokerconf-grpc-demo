@@ -1,8 +1,8 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "io.jdk.grpcdemo";
-package io.jdk.grpcdemo;
+option java_package = "ru.jokerconf.grpcdemo";
+package ru.jokerconf.grpcdemo;
 
 message WeatherRequest {
     Coordinates coordinates = 1;

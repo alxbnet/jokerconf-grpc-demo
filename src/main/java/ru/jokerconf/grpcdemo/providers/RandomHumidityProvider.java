@@ -1,6 +1,6 @@
-package io.jdk.grpcdemo.providers;
+package ru.jokerconf.grpcdemo.providers;
 
-import io.jdk.grpcdemo.Humidity;
+import ru.jokerconf.grpcdemo.Humidity;
 
 import java.util.Random;
 import java.util.function.Supplier;

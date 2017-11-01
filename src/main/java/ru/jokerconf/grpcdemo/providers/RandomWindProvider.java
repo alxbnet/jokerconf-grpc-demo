@@ -1,7 +1,7 @@
-package io.jdk.grpcdemo.providers;
+package ru.jokerconf.grpcdemo.providers;
 
-import io.jdk.grpcdemo.Speed;
-import io.jdk.grpcdemo.Wind;
+import ru.jokerconf.grpcdemo.Speed;
+import ru.jokerconf.grpcdemo.Wind;
 
 import java.util.Random;
 import java.util.function.Supplier;

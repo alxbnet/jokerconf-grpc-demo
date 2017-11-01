@@ -1,8 +1,8 @@
-package io.jdk.grpcdemo.dependencies;
+package ru.jokerconf.grpcdemo.dependencies;
 
-import io.jdk.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceFutureStub;
-import io.jdk.grpcdemo.dependencies.TemperatureServiceGrpc.TemperatureServiceFutureStub;
-import io.jdk.grpcdemo.dependencies.WindServiceGrpc.WindServiceFutureStub;
+import ru.jokerconf.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceFutureStub;
+import ru.jokerconf.grpcdemo.dependencies.TemperatureServiceGrpc.TemperatureServiceFutureStub;
+import ru.jokerconf.grpcdemo.dependencies.WindServiceGrpc.WindServiceFutureStub;
 import io.grpc.Server;
 import io.grpc.netty.NettyChannelBuilder;
 import io.grpc.netty.NettyServerBuilder;

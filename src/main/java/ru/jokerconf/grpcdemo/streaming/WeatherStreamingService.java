@@ -1,14 +1,14 @@
-package io.jdk.grpcdemo.streaming;
+package ru.jokerconf.grpcdemo.streaming;
 
 import com.google.common.collect.ImmutableList;
-import io.jdk.grpcdemo.Coordinates;
-import io.jdk.grpcdemo.WeatherRequest;
-import io.jdk.grpcdemo.WeatherResponse;
-import io.jdk.grpcdemo.WeatherResponse.Builder;
-import io.jdk.grpcdemo.streaming.HumidityStreamingServiceGrpc.HumidityStreamingServiceStub;
-import io.jdk.grpcdemo.streaming.TemperatureStreamingServiceGrpc.TemperatureStreamingServiceStub;
-import io.jdk.grpcdemo.streaming.WeatherStreamingServiceGrpc.WeatherStreamingServiceImplBase;
-import io.jdk.grpcdemo.streaming.WindStreamingServiceGrpc.WindStreamingServiceStub;
+import ru.jokerconf.grpcdemo.Coordinates;
+import ru.jokerconf.grpcdemo.WeatherRequest;
+import ru.jokerconf.grpcdemo.WeatherResponse;
+import ru.jokerconf.grpcdemo.WeatherResponse.Builder;
+import ru.jokerconf.grpcdemo.streaming.HumidityStreamingServiceGrpc.HumidityStreamingServiceStub;
+import ru.jokerconf.grpcdemo.streaming.TemperatureStreamingServiceGrpc.TemperatureStreamingServiceStub;
+import ru.jokerconf.grpcdemo.streaming.WeatherStreamingServiceGrpc.WeatherStreamingServiceImplBase;
+import ru.jokerconf.grpcdemo.streaming.WindStreamingServiceGrpc.WindStreamingServiceStub;
 import io.grpc.stub.StreamObserver;
 
 import java.util.List;

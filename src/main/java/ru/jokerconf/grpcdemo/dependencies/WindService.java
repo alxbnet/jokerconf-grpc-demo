@@ -1,9 +1,9 @@
-package io.jdk.grpcdemo.dependencies;
+package ru.jokerconf.grpcdemo.dependencies;
 
-import io.jdk.grpcdemo.Coordinates;
-import io.jdk.grpcdemo.Wind;
-import io.jdk.grpcdemo.dependencies.WindServiceGrpc.WindServiceImplBase;
-import io.jdk.grpcdemo.providers.RandomWindProvider;
+import ru.jokerconf.grpcdemo.Coordinates;
+import ru.jokerconf.grpcdemo.Wind;
+import ru.jokerconf.grpcdemo.dependencies.WindServiceGrpc.WindServiceImplBase;
+import ru.jokerconf.grpcdemo.providers.RandomWindProvider;
 import io.grpc.stub.StreamObserver;
 
 import java.util.function.Supplier;

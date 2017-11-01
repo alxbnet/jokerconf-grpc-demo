@@ -1,9 +1,9 @@
-package io.jdk.grpcdemo.dependencies;
+package ru.jokerconf.grpcdemo.dependencies;
 
-import io.jdk.grpcdemo.Coordinates;
-import io.jdk.grpcdemo.Humidity;
-import io.jdk.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceImplBase;
-import io.jdk.grpcdemo.providers.RandomHumidityProvider;
+import ru.jokerconf.grpcdemo.Coordinates;
+import ru.jokerconf.grpcdemo.Humidity;
+import ru.jokerconf.grpcdemo.dependencies.HumidityServiceGrpc.HumidityServiceImplBase;
+import ru.jokerconf.grpcdemo.providers.RandomHumidityProvider;
 import io.grpc.stub.StreamObserver;
 
 import java.util.function.Supplier;

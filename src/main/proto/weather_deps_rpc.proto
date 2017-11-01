@@ -1,8 +1,8 @@
 syntax = "proto3";
 
 option java_multiple_files = true;
-option java_package = "io.jdk.grpcdemo.dependencies";
-package io.jdk.grpcdemo;
+option java_package = "ru.jokerconf.grpcdemo.dependencies";
+package ru.jokerconf.grpcdemo;
 
 import "weather.proto";
 

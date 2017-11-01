@@ -1,4 +1,4 @@
-package io.jdk.grpcdemo;
+package ru.jokerconf.grpcdemo;
 
 import io.grpc.Server;
 import io.grpc.netty.NettyServerBuilder;

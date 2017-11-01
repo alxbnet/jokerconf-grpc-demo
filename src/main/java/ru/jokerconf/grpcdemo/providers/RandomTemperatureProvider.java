@@ -1,11 +1,11 @@
-package io.jdk.grpcdemo.providers;
+package ru.jokerconf.grpcdemo.providers;
 
-import io.jdk.grpcdemo.Temperature;
+import ru.jokerconf.grpcdemo.Temperature;
 
 import java.util.Random;
 import java.util.function.Supplier;
 
-import static io.jdk.grpcdemo.Temperature.Units.CELSUIS;
+import static ru.jokerconf.grpcdemo.Temperature.Units.CELSUIS;
 
 /**
  * Randomly generates {@link Temperature}.
